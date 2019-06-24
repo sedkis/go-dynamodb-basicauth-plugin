@@ -2,7 +2,7 @@
 
 Built to be run natively as a package by Tyk Gateways.  
 
-This is coded to be run by Tyk as middleware, NOT custom auth.  That code is available in another project.
+This is coded to be run by Tyk as custom auth middleware.
 
 This will authenticate requests by connecting to DynamoDB and checking the Basic Auth credentials in the request to see if they match what's in the DB.  If success, will let the request continue, otherwise will return an auth error.
 
